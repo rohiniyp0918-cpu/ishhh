@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friendship Proposal 💛</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .box {
+      background: white;
+      width: 90%;
+      max-width: 500px;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      color: #ff3b6f;
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h2 {
+      color: #222;
+    }
+
+    button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 10px;
+      transition: 0.3s;
+    }
+
+    .yes {
+      background: #4CAF50;
+      color: white;
+    }
+
+    .yes:hover {
+      background: #2e8b57;
+    }
+
+    .no {
+      background: #ff4d4d;
+      color: white;
+    }
+
+    .no:hover {
+      background: #cc0000;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #111;
+    }
+
+    #nextBtn {
+      display: none;
+      margin-top: 15px;
+      background: #6a5acd;
+      color: white;
+    }
+
+    #nextBtn:hover {
+      background: #483d8b;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>Hey Best Friend 💛</h1>
+
+    <p>
+      I just want to tell you something from my heart...<br><br>
+      You are not just a friend, you are my happiness 🫂✨<br>
+      You supported me in my bad days and smiled in my good days 💖<br><br>
+      I feel lucky to have you in my life 🌍💛
+    </p>
+
+    <h2>Will you always stay as my best friend? 🥺💛</h2>
+
+    <button class="yes" onclick="yesClick()">YES 💖</button>
+    <button class="no" onclick="noClick()">NO 😢</button>
+
+    <div id="result"></div>
+
+    <button id="nextBtn" onclick="goNext()">Next Page ➡️</button>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" autoplay loop>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script>
+    function yesClick() {
+      document.getElementById("result").innerHTML =
+        "Yayyy 😍💖 Thank you!! You are my forever best friend 🫂💛";
+
+      document.getElementById("nextBtn").style.display = "inline-block";
+    }
+
+    function noClick() {
+      document.getElementById("result").innerHTML =
+        "Oh no 😭💔 But still I will always care for you 🥺💛";
+    }
+
+    function goNext() {
+      window.location.href = "page2.html";
+    }
+
+    // To play music after user interaction (mobile browsers require click)
+    window.addEventListener("click", function () {
+      document.getElementById("bgMusic").play();
+    });
+  </script>
+
+</body>
+</html>
