@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Wishes 💍❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ff512f, #dd2476);
+      min-height: 100vh;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .box {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 25px;
+      border-radius: 25px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0px 10px 25px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-top: 10px;
+    }
+
+    video {
+      width: 100%;
+      max-width: 700px;
+      margin-top: 20px;
+      border-radius: 20px;
+      box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>💍 Congratulations on Your Wedding ❤️</h1>
+
+    <p>
+      Dear <b>My Best Friend</b> 💖,<br><br>
+      Wishing you a lifetime of love, happiness and togetherness 💑✨<br>
+      May your marriage life be full of blessings 💍❤️
+    </p>
+
+    <h2>🎥 Your Wedding Special Video</h2>
+
+    <iframe src="https://drive.google.com/file/d/1wkxPQCsvRr8cFklZCmbr96cVmfAON_dl/preview"
+        width="100%" height="350" allow="autoplay"></iframe>
+
+    <button onclick="openSurprise()">🎁 Another Surprise</button>
+
+<script>
+  function openSurprise() {
+    window.location.href = "surprise.html";
+  }
+</script>
+
+
+
+    <audio id="bgMusic" autoplay loop>
+      <source src="weddingmusic.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script>
+    // Music play support for mobile
+    window.addEventListener("click", function () {
+      document.getElementById("bgMusic").play();
+    });
+
+  
+    function openSurprise() {
+      window.location.href = "photo.html";
+    }
+
+
+    
+
+  </script>
+
+</body>
+</html>
